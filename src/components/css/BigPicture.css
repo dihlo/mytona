@@ -1,0 +1,26 @@
+@media (min-width: 1200px) { 
+    .bigpicture-container {
+        width: 100%;
+        height: 900px;
+        background: rgba(0, 0, 0, 0.9);
+    }
+    .bigpicture-img {
+        background: url(../../img/big.png) center no-repeat;
+        background-size: cover;
+        height: 900px;
+        width: 70%;
+        float: left;
+    }
+    .bigpicture-text {
+        float: left;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        height: 900px;
+        line-height: 300px;
+        width: 30%;
+    }
+    .bigpicture-text div {
+        height: 300px;
+    }
+}
