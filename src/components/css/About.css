@@ -1,0 +1,21 @@
+@media (min-width: 1200px) { 
+    .about-container {
+        height: calc(100vh - 150px);
+        margin-top: 50px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        color: white; 
+    }
+    .about-onmiddle {
+        padding-top: 200px;        
+    }
+    .about-onmiddle div {
+        font-size: 2em;
+        padding-top: 15px;
+    }
+    .about-text {
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+
+}
