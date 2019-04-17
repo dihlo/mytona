@@ -1,0 +1,53 @@
+@media (min-width: 1200px) { 
+    a {color:rgb(255, 255, 255);}      /* unvisited link */
+    a:visited {color:rgb(255, 255, 255);}  /* visited link */
+    a:hover {color:rgb(255, 255, 255);}  /* mouse over link */
+    a:active {color:rgb(255, 255, 255);}  /* selected link */
+
+    .card-container {
+        height: 230px;
+        width: 230px;
+        background: rgba(255, 255, 255, 0.9);
+        -webkit-box-shadow: 1px 1px 1px 2px #CCCCCC;
+        box-shadow: 1px 1px 1px 2px #CCCCCC;
+        -webkit-border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 20px 20px 20px;
+        float: left;     	
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+    .card-content {
+        float: left;
+        width: 230px;
+        margin-left: 10px;
+    }
+    .card-content:hover {
+        opacity: 0.9; 
+    }
+    .card-disc {
+        float: left;
+        margin-top: 15px;
+        width: 230px;
+    }
+    .card-name {
+        font-size: 25px;
+        margin-top: 40px;
+        height: 40px;
+        width: 100%;
+        float: left;
+    }    
+    .card-namecyrcle {
+        width: 120px;
+        height: 120px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background: black; 
+        margin: 55px auto;
+        text-align: center;   
+    }
+    .card-namecyrcle:hover {
+        opacity: 0.4; 
+    }
+}

@@ -1,17 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from "./components/Home";
 import {connect} from 'react-redux';
 import { Switch, Route, withRouter } from 'react-router-dom';
 
+import Home from "./components/Home";
+import Contacts from "./components/Contacts";
+import TopMenu from './components/TopMenu';
+import Footer from './components/Footer';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        	<Switch>
-						<Route exact path='/' component={Home}/>
-					</Switch>
+      <div>
+        <TopMenu />
+        <div className="App">
+            <Switch>
+              <Route exact path='/' component={Home}/>
+              <Route exact path='/contacts' component={Contacts}/>
+              <Route exact path='/about' component={About}/>
+              <Route exact path='/portfolio' component={Portfolio}/>
+            </Switch>
+        </div>
+        <Footer />
       </div>
     );
   }

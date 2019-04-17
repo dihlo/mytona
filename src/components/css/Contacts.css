@@ -1,0 +1,24 @@
+@media (min-width: 1200px) { 
+    .contacts-container {
+        height: calc(100vh - 150px);
+        margin-top: 50px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        color: white; 
+    }
+    .contacts-onmiddle {
+        padding-top: 200px;        
+    }
+    .contacts-onmiddle img {
+        height: 1em;
+    }
+    .contacts-onmiddle div {
+        font-size: 2em;
+        padding-top: 15px;
+    }
+    .contacts-text {
+        font-size: 3em;
+        padding-bottom: 20px;
+    }
+
+}

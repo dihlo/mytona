@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
         <div className="footer-container">
             <div className="footer-github">
-              <img src={githubpic} />
+              <img src={githubpic} alt="github"/>
             </div>
             <div className="footer-tomytona">
               Специально для выполнения тестового задания для LLC MyTona
