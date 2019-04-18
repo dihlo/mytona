@@ -3,6 +3,8 @@ const INITIAL_STATE = {
 		data: [],
 		loading: false,
 		error: '',
+		limit:  5,
+		pagesCount: 1,
 	},
 }
 
@@ -11,9 +13,18 @@ export default function (state=INITIAL_STATE, action) {
 		case "GET_PORTFOLIO":
 		return {...state, portfolioData:{...state.portfolioData, loading: true}};
 		case "GET_PORTFOLIO_OK":
-		return {...state, portfolioData:{...state.portfolioData, data: action.responseData, loading: false}};
+		let pagesCount = 1;
+		pagesCount = Math.ceil(action.responseData.length/action.limit)
+		return {...state, portfolioData:{...state.portfolioData, 
+			data: action.responseData, 
+			loading: false,
+			pagesCount: pagesCount
+		}};
 		case "GET_PORTFOLIO_ERROR":
-		return {...state, portfolioData:{...state.portfolioData, error: action.responseData, loading: false}};
+		return {...state, portfolioData:{...state.portfolioData, 
+			error: action.responseData, 
+			loading: false
+		}};
 	default:
 		return state;
 	}

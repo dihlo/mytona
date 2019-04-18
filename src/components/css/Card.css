@@ -21,6 +21,8 @@
         float: left;
         width: 230px;
         margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .card-content:hover {
         opacity: 0.9; 
@@ -49,5 +51,21 @@
     }
     .card-namecyrcle:hover {
         opacity: 0.4; 
+    }
+    .card-del-edit div {
+        width: 30px;
+        height: 30px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;        
+        background: white; 
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .card-del-edit img {
+        padding-top: 5px; 
+        height: 20px;
+        width: 20px;
     }
 }
