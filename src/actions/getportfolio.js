@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const getportfolio = () => {
+export const getportfolio = (limit) => {
 	console.log('get portfolio card');
 	return (dispatch) => {
 		axios.defaults.headers.common = {};
@@ -15,6 +15,7 @@ export const getportfolio = () => {
 			dispatch({
 				type: "GET_PORTFOLIO_OK",
 				responseData: response.data,
+				limit: limit,
 			});
 		})
 		.catch(function (error) {

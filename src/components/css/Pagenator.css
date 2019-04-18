@@ -1,0 +1,16 @@
+#page-numbers {
+    width: 100%;
+    float: left;
+    list-style: none;
+    display: flex;
+    text-align: center;
+  }
+  
+  #page-numbers > li {
+    font-size: 2em;  
+    margin-right: 1em;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+  }
+  

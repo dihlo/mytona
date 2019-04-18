@@ -9,6 +9,8 @@ import TopMenu from './components/TopMenu';
 import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import CardInfo from './components/CardInfo';
+
 
 class App extends Component {
   render() {
@@ -21,6 +23,7 @@ class App extends Component {
               <Route exact path='/contacts' component={Contacts}/>
               <Route exact path='/about' component={About}/>
               <Route exact path='/portfolio' component={Portfolio}/>
+              <Route exact path='/cardinfo' component={CardInfo}/>
             </Switch>
         </div>
         <Footer />
