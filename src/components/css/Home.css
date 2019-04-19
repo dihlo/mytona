@@ -1,0 +1,8 @@
+@media (min-width: 1200px) {
+    .home-container {
+      height: calc(100vh - 150px);
+      margin-top: 50px;
+      width: 100%;
+   }
+}
+  

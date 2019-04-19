@@ -1,45 +1,92 @@
-.modal-wrapper {
-    background: white ;
-    border: 1px solid #d0cccc ;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17) ;
-    margin: 0px auto 0 ;
-    transition: all .8s ;
-    width: 50% ;
-    color: black ;
-}
+@media (min-width: 1200px) {
+  .modal-wrapper {
+    background: white;
+    border: 1px solid #d0cccc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    margin: 0px auto 0;
+    transition: all 0.8s;
+    width: 50%;
+    color: black;
+  }
 
-.modal-body {
-    padding: 10px 15px ;
-    text-align: center ;    
-}
+  .modal-body {
+    padding: 10px 15px;
+    text-align: center;
+  }
 
-.modal-footer {
-    background: #263238 ;
-    height: 35px ;
-    padding: 15px ;
+  .modal-footer {
+    background: #263238;
+    height: 35px;
+    padding: 15px;
     font-size: 15px;
-}
+  }
 
-.btn-cancel{
-    background: coral ;
-    border: none ;
-    color: white ;
-    cursor: pointer ;
-    font-weight: bold ;
-    outline: none ;
-    padding: 10px ;
-}
+  .btn-cancel {
+    background: coral;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    padding: 10px;
+  }
 
-.btn-cancel{
+  .btn-cancel {
     background-color: #b71c1c;
-    float: left ;
-    margin: 0 auto ;
-}
+    float: left;
+    margin: 0 auto;
+  }
 
-.back-drop {
-    background-color: rgba(48, 49, 48, 0.42) ;
-    height: 100% ;
-    position: fixed ;
-    transition: all 1.3s ;
-    width: 100% ;
+  .back-drop {
+    background-color: rgba(48, 49, 48, 0.42);
+    height: 100%;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+  }
+}
+@media (max-width: 500px)  {
+  .modal-wrapper {
+    background: white;
+    margin: 0px auto 0;
+    transition: all 0.8s;
+    height: 0px;
+    width: 100%;
+    color: black;
+  }
+
+  .modal-body {
+    text-align: center;
+    color: white;
+  }
+
+  .modal-footer {
+    background: #263238;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .btn-cancel {
+    background: coral;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    padding: 10px;
+  }
+
+  .btn-cancel {
+    background-color: #b71c1c;
+    float: left;
+    margin: 0 auto;
+  }
+
+  .back-drop {
+    background-color: rgba(48, 49, 48, 0.42);
+    height: 100%;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+  }
 }

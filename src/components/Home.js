@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import './css/Home.css';
-import BigPicture from './BigPicture';
+import React, { Component } from "react";
+import "./css/Home.css";
+import BigPicture from "./BigPicture";
 
+//view of home
 class Home extends Component {
   render() {
     return (
-        <div>
-            <BigPicture />
-        </div>
+      <div className="home-container">
+        <BigPicture />
+      </div>
     );
   }
 }
