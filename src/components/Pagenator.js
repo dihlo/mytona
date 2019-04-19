@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './css/Pagenator.css';
 import Card from './Card';
 
@@ -27,7 +27,7 @@ class Pagenator extends React.Component {
     const currentCards = data.slice(indexOfFirstCard, indexOfLastCard);
 
     const renderCards = currentCards.map((item) => {
-        return <Card item={item}/>
+        return <Card key={item.id} item={item}/>
     });
 
     // Logic for displaying page numbers
