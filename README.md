@@ -21,6 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
   * [./components/Contacts.js] - view of contacts 
   * [./components/About.js] - view of about
   * [./components/Portfolio.js] - rendering all projects do request get to json-server api 
-    *[Pagenator]
+  + [./components/Pagenator]
 
 
