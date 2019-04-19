@@ -1,5 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Install project
+
+`npm install`
+`yarn install`
+
+## START PROJECT
+
+# 1. `npm run json-server`
+Runs the json-server.<br>
+Open [http://localhost:3015](http://localhost:3015/portfolio) to view it in the browser.
+
+# 2. `npm start`
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 ## Available Scripts
 
 In the project directory, you can run:
