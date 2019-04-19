@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Install project
+## INSTALL PROJECT
 
 `npm install`<br>
 `yarn install`
@@ -21,6 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
   * [./components/Contacts.js] - view of contacts 
   * [./components/About.js] - view of about
   * [./components/Portfolio.js] - rendering all projects do request get to json-server api 
-    ** [Pagenator]
+    *[Pagenator]
 
 
