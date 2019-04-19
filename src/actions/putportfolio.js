@@ -1,39 +1,27 @@
 import axios from 'axios';
 
-export const putmeals = (value, id, keyname) => {
-
-  return (dispatch) => dispatch({
-    type: 'PUT_MEALS',
-    payload: {
-    	value: value,
-    	id: id,
-    	keyname: keyname,
-    },
-  });
-};
-
-export const sendputmeals = (data) => {
+export const putportfolio = (data, id) => {
 	return (dispatch) => {
 		axios.defaults.headers.common = {};
 		dispatch({
-			type: "SEND_PUT_MEALS"
+			type: "PUT_PORTFOLIO"
 		});
 
 		axios({
 		  method:'put',
-		  url:'http://saddev.s-vfu.ru/meals/' + data.id,
+		  url:'http://localhost:3015/portfolio/' + id,
 		  data: data,
 		})
 		  .then(function(response) {
 		  	console.log(response);
 		   	dispatch({
-				type: "SEND_PUT_MEALS_OK",
+				type: "PUT_PORTFOLIO_OK",
 				responseData: response.data,
 			});
 		  })
 		  .catch(function (error) {
 		   	dispatch({
-				type: "SEND_PUT_MEALS_ERROR",
+				type: "PUT_PORTFOLIO_ERROR",
 				responseData: "error_meals",
 			});		  	
 		});

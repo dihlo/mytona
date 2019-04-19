@@ -28,11 +28,13 @@ class Portfolio extends Component {
         const {obj} = this.props;
         switch (type) {
             case 'edit':
-            return <Edit />;
+                return <Edit obj={obj}/>;
             case 'add':
-            return <Add />;
+                return <Add />;
             case 'del':
-            return <Del />;
+                return <Del obj={obj}/>;
+            default:
+                return <div></div>;
         }    
     }
 
@@ -82,7 +84,7 @@ class Portfolio extends Component {
                         <p>Портфолио</p> 
                         <button className="buttonadd" onClick={this.openModalHandler}>Добавить</button>
                     </div>
-                    <Pagenator data={data} pagesCount={pagesCount} limit={limit}/>
+                    <Pagenator key={data.id} data={data} pagesCount={pagesCount} limit={limit}/>
                 </div>
             </div>
         );

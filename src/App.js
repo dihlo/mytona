@@ -18,7 +18,7 @@ class App extends Component {
       <div>
         <TopMenu />
         <div className="App">
-            <Switch>
+            <Switch >
               <Route exact path='/' component={Home}/>
               <Route exact path='/contacts' component={Contacts}/>
               <Route exact path='/about' component={About}/>

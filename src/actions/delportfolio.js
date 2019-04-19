@@ -1,26 +1,26 @@
 import axios from 'axios';
 
-export const deletemeals = (id) => {
+export const delportfolio = (id) => {
 	return (dispatch) => {
 		axios.defaults.headers.common = {};
 		dispatch({
-			type: "DELETE_MEALS"
+			type: "DEL_PORTFOLIO"
 		});
-
+		console.log('del')
 		axios({
 		  method:'delete',
-		  url:'http://saddev.s-vfu.ru/meals/'+id,
+		  url:'http://localhost:3015/portfolio/'+id,
 		})
 		  .then(function(response) {
 		  	console.log(response);
 		   	dispatch({
-				type: "DELETE_MEALS_OK",
+				type: "DEL_PORTFOLIO_OK",
 				payload: id,
 			});
 		  })
 		  .catch(function (error) {
 		   	dispatch({
-				type: "DELETE_MEALS_ERROR",
+				type: "DEL_PORTFOLIO_ERROR",
 			});		  	
 		});
 	};

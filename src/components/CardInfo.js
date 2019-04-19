@@ -13,8 +13,8 @@ class CardInfo extends Component {
     return (
       <div className="cardinfo-container">
         <p><b>Имя: {name}</b></p>
-        <a href={link} target="_blank" ><p>Ссылка на сайт</p></a>
-        <a href={link} target="_blank" ><div style={{backgroundImage: `url(${photo})`}}/></a>
+        <a href={link} target="_blank" rel="noopener noreferrer" ><p>Ссылка на сайт</p></a>
+        <a href={link} target="_blank" rel="noopener noreferrer" ><div style={{backgroundImage: `url(${photo})`}}/></a>
         <p>Описание: {disc}</p>
       </div>  
     );
