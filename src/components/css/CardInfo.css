@@ -1,18 +1,60 @@
-.cardinfo-container {
-  height: calc(100vh - 150px);
-  margin-top: 50px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  color: white;
-  font-size: 1em;
+@media (min-width: 1200px) {
+  .cardinfo-container {
+    height: calc(100vh - 150px);
+    margin-top: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 1em;
+  }
+  .cardinfo-container p {
+    padding: 10px;
+  }
+  .cardinfo-container div {
+    width: 400px;
+    height: 50vh;
+    background-size: cover;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
 }
-.cardinfo-container p {
-  padding: 10px;
+@media (max-width: 500px) {
+  .cardinfo-container {
+    height: 85vh;
+    margin-top: 5vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 1em;
+  }
+  .cardinfo-container p {
+    padding: 10px;
+  }
+  .cardinfo-container div {
+    width: 50vh;
+    height: 50vh;
+    background-size: cover;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
 }
-.cardinfo-container div {
-  width: 400px;
-  height: 50vh;
-  background-size: cover;
-  margin: 0 auto;
-  background-repeat: no-repeat;
+@media (min-width: 501px) and (max-width: 1199px)  {
+  .cardinfo-container {
+    height: 120vh;
+    margin-top: 5vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 1em;
+  }
+  .cardinfo-container p {
+    padding: 10px;
+  }
+  .cardinfo-container div {
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
 }

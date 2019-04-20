@@ -18,11 +18,12 @@ export default function(state = INITIAL_STATE, action) {
     case "GET_PORTFOLIO_OK":
       let pagesCount = 1;
       pagesCount = Math.ceil(action.responseData.length / action.limit);
+      let arr = action.responseData.reverse();
       return {
         ...state,
         portfolioData: {
           ...state.portfolioData,
-          data: action.responseData,
+          data: arr,
           loading: false,
           pagesCount: pagesCount
         }

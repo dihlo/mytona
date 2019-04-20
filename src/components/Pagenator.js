@@ -7,7 +7,8 @@ class Pagenator extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentPage: 1
+      currentPage: 1,
+      activePage: 1,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -15,7 +16,8 @@ class Pagenator extends React.Component {
   //take number of page
   handleClick(event) {
     this.setState({
-      currentPage: Number(event.target.id)
+      currentPage: Number(event.target.id),
+      activePage: Number(event.target.id)
     });
   }
 
@@ -39,8 +41,9 @@ class Pagenator extends React.Component {
 
     //rendering page numbers
     const renderPageNumbers = pageNumbers.map(number => {
+      const activePage = this.state.activePage === number ? 'activePage' : '';
       return (
-        <li key={number} id={number} onClick={this.handleClick}>
+        <li className={activePage} key={number} id={number} onClick={this.handleClick}>
           {number}
         </li>
       );

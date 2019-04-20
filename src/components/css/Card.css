@@ -93,7 +93,7 @@
 
   .card-container {
     height: 230px;
-    width: 230px;
+    width: 100%;
     background: rgba(255, 255, 255, 0.9);
     -webkit-box-shadow: 1px 1px 1px 2px #cccccc;
     box-shadow: 1px 1px 1px 2px #cccccc;
@@ -107,7 +107,7 @@
   .card-content {
     float: left;
     width: 90%;
-    margin-left: 10px;
+    margin-left: 5%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -139,6 +139,9 @@
   .card-namecyrcle:hover {
     opacity: 0.4;
   }
+  .card-del-edit {
+    width: 100%;
+  }
   .card-del-edit div {
     width: 30px;
     height: 30px;
@@ -154,5 +157,88 @@
     padding-top: 5px;
     height: 20px;
     width: 20px;
+  }
+}
+@media (min-width: 501px) and (max-width: 1199px) {
+  a {
+    color: rgb(255, 255, 255);
+  } 
+  a:visited {
+    color: rgb(255, 255, 255);
+  } 
+  a:hover {
+    color: rgb(255, 255, 255);
+  } 
+  a:active {
+    color: rgb(255, 255, 255);
+  } 
+
+  .card-container {
+    height: 200px;;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 1px 1px 1px 2px #cccccc;
+    box-shadow: 1px 1px 1px 2px #cccccc;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  .card-content {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display:block;
+    overflow:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .card-content:hover {
+    opacity: 0.9;
+  }
+  .card-disc {
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 0.6em;
+  }
+  .card-name {
+    margin-top: 30px;
+    height: 20px;
+    width: 100%;
+    float: left;
+    font-size: 1em;
+  }
+  .card-namecyrcle {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: black;
+    margin: 55px auto;
+    text-align: center;
+  }
+  .card-namecyrcle:hover {
+    opacity: 0.4;
+  }
+  .card-del-edit div {
+    width: 1em;
+    height: 1em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: white;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .card-del-edit img {
+    padding-bottom: 0.1em;
+    width: 1em;
+    height: 0.8em;
   }
 }
