@@ -1,18 +1,48 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import "./css/TopMenu.css";
 
-//view top menu 
+//view top menu
 class TopMenu extends Component {
   render() {
     return (
       <div className="topmenu-navbar">
         <div className="topmenu-navbar-onmiddle">
-          <div className="topmenu-navbar-textlogo"><a href="./"><b>Бугаев Андрей</b></a></div>
+          <div className="topmenu-navbar-textlogo">
+            <a href="./">
+              <b>Бугаев Андрей</b>
+            </a>
+          </div>
           <div className="topmenu-navbar-toright">
-            <a className="topmenu-navbar-a" href="./">Главная</a>
-            <a className="topmenu-navbar-a" href="./about">Обо мне</a>
-            <a className="topmenu-navbar-a" href="./contacts">Контакты</a>
-            <a className="topmenu-navbar-a" href="./portfolio">Портфолио</a>
+            <NavLink
+              activeClassName="active"
+              className="topmenu-navbar-a"
+              to="/"
+              exact
+            >
+              Главная
+            </NavLink>
+            <NavLink
+              activeClassName="active"
+              className="topmenu-navbar-a"
+              to="/about"
+            >
+              Обо мне
+            </NavLink>
+            <NavLink
+              activeClassName="active"
+              className="topmenu-navbar-a"
+              to="/contacts"
+            >
+              Контакты
+            </NavLink>
+            <NavLink
+              activeClassName="active"
+              className="topmenu-navbar-a"
+              to="/portfolio"
+            >
+              Портфолио
+            </NavLink>
           </div>
         </div>
       </div>

@@ -1,9 +1,10 @@
 #page-numbers {
-  width: 100%;
+  width: 80%;
   float: left;
   list-style: none;
   display: flex;
   text-align: center;
+  padding-left: 20px;
 }
 
 #page-numbers > li {
@@ -12,4 +13,8 @@
   color: white;
   user-select: none;
   cursor: pointer;
+}
+
+.activePage {
+  color: #009900!important;
 }
