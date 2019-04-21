@@ -48,6 +48,20 @@
       "photo": "http://yakutia.info/uploads/images/18/01/cP1FSJ60Dw.jpg",
       "disc": "Принимал участие в создание сайта Международных интеллектуальных игр 2018",
       "id": 8
+    },
+    {
+      "name": "Чукурук APK",
+      "link": "https://play.google.com/store/apps/details?id=com.dihlo",
+      "photo": "https://lh3.googleusercontent.com/7VEEW3iX0ZL3KfpzlqNngVyJXR0Mjq_xkHqWAb-cE_Y5iLzq_NJlRSehDRvuWCHvI6Q=s180-rw",
+      "disc": "Командный проект система для детсадов (стартup)",
+      "id": 9
+    },
+    {
+      "name": "ДВПО",
+      "link": "http://dvpo.s-vfu.ru/",
+      "photo": "http://dvpo.s-vfu.ru/img/logo_new.svg",
+      "disc": "Заказной проект для кооператива (web, админка, apk)",
+      "id": 10
     }
   ]
 }
